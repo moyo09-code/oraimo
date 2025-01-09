@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oriamo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="oraimo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="container">
+        <div class="logo">
+        <img  width="190px" src="./oraimo.png" >
+    </div>
+    <nav class="navmenu">
+        <div class="header-text">
+            <span>Daily Deals    </span> <span><img src="./fire.png" width="15px"></span>
+    </div>
+        <div class="header-text">
+             <li class="dropdown" >Hot & New <span class="Hot & New"><i class="bi bi-chevron-down"></i></span><ul>
+                <!-- <li><a>Best Seller</a></li>
+                <li><a>New Arrival</a></li> -->
+            </ul></li>
+        </div>
+        <li class="dropdown">Product <span class="product"><i class="bi bi-chevron-down"></i></span><ul>
+            <!-- <li>Power</li>
+            <li>Audio</li>
+            <li>Smart & Office</li>
+            <li>Personal Care</li>
+            <li>Home Appliances</li> -->
+        </ul></li>
+        <li class="dropdown">Support <span class="support"><i class="bi bi-chevron-down"></i></span><ul>
+            <div>
+            <li>Track Order</li>
+            <li>Visit Carlcare</li>
+            <li>Product Authentication</li>
+        </div>
+        </ul></li>
+  
+    </nav>
+    <div class="icon">
+        <i class="bi bi-phone"></i>
+        <i class="bi bi-search"></i>
+        <i class="bi bi-cart"></i>
+    </div>
+    </header>
+    <section>
+         <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./oraimo hero.webp" width="1900px"></div>
+      <div class="swiper-slide"><img src="./oraimo hero2.webp" width="1900px"></div>
+      <div class="swiper-slide"><img src="./oraimo hero3.webp"width="1900px"></div>
+      <div class="swiper-slide"><img src="./oraimo hero4.webp"width="1900px"></div>
+      <div class="swiper-slide"><img src="./oraimo hero5.webp"width="1900px"></div>
+      <div class="swiper-slide"><img src="./oraimo hero6.webp"width="1900px"></div>
+      <div class="swiper-slide"><img src="./oraimo hero7.webp"width="1900px"></div>
+      <div class="swiper-slide"><img src="./oraimo hero8.webp"width="1900px"></div>
+      <div class="swiper-slide"><img src="./oraimo hero9.webp"width="1900px"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        color: "green",
+        clickable: true,
+      },
+      navigation: {
+        
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay:{
+        delay: 2000
+      }
+      
+    });
+  </script>
+    </section>
+    <div class="icontainer">
+        <div class="text">
+            <img src="./car.webp" alt=""><p>Free Shipping over ₦30,000 in Lagos</p>
+        </div>
+        <div class="text">
+            <img src="./dollar.webp" alt=""><p>Cash on Delivery</p>
+        </div>
+        <div class="text">
+            <img src="./tool.webp" alt=""><p> Hassle-Free Warranty</p>
+        </div>
+    </div>
+    <div class="image-section">
+    <div>
+    <img src="./audio.webp" alt="" >
+  </div>
+  <div class="image-section2">
+    <img src="./power.webp" alt="">
+    <img src="./smart & office.webp" alt="">
+    <img src="./personal care.webp" alt="">
+    <img src="./home appliances.webp" alt="">
+  </div>
+
+  </div>
+    
+</body>
+</html>

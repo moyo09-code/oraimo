@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />  
+     <link rel="stylesheet" href="style.css"> 
+<style>
+    section{
+        width:100%;
+    }
+.herocontainer{
+    position:relative;
+    width:40%;
+  padding-left: 40px;
+}
+.swiper{
+  margin-left: 450px;
+position: left;
+
+}
+.container{
+    display: flex;
+    position:absolute;
+    left:50%;
+    right:60%;
+    transform:translate(-90%, 70%);
+    margin-top: 20px;
+    justify-content:space-between
+}
+h1{
+    width:70%;
+    font-size:40px;
+    font-weight:900;
+    font-stretch:expanded;
+    line-height: 1.05;
+    padding-bottom: 40px;
+    text-align: left;
+}
+p{
+    width:70%;
+    font-size: 18px;
+    padding-bottom:40px;
+    text-align: left;
+}
+section{
+    height:100vh;
+    background-image:url(sonic.3.jpg);
+    background-size:cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn{
+    background-color: burlywood;
+    padding:10px 7px;
+    border-radius: 5px;
+    color: black;
+}
+.btn:hover{background-color: white;
+    color:burlywood;
+
+}
+     </style>
+</head>
+<body>
+    <header>
+        <section>
+        <div class="herocontainer">
+            
+            <h1>A hedgehog movie every would love to watch.</h1>
+            <p>Sonic is about an hedgehog who is one of a kind in all it species.Most kids can't wait to watch the season 3 of the movie which will premier on the 20th of December 2024 in all cinemas across the globe.</p>
+        
+            <a href="#" class="btn">Book Now</a>
+             <!-- Swiper -->
+             <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img width="520px" height="500px" src="./sonic.4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img width="350px" src="./download.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img width="550px" height="500px" src="./sonic.2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img width="350px" src="./sonic.5.jpg" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay:{
+        delay:2000
+      }
+    });
+  </script>
+</div>
+</section>
+</header>
+</body>
+</html>    

@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+    box-sizing: border-box;
+    color:white;
+}
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(28, 28, 28);
+        color: white;
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+    .navmenu{
+        display: flex;
+        padding: 30px;
+        column-gap: 40px;
+    }
+    .icon{
+        display: flex;
+        padding: 30px;
+        column-gap: 40px;
+    }
+    .icon i:hover{
+        color: rgb(58, 175, 58);
+    }
+    .navmenu li:hover{
+        color: rgb(58, 175, 58);
+    }
+    .navmenu i:hover{
+        color: rgb(58, 175, 58);
+    }
+    .navmenu span:hover{
+        color: rgb(58, 175, 58);
+    }
+    .dropdown{
+        position: relative;
+    }
+    .dropdown ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        visibility: hidden;
+    }
+    .dropdown ul li{
+        align-items: left;
+        color: white;
+    }
+    .dropdown ul li a:hover{
+        color: greenyellow;
+    }
+    .swiper-button-next-arrow{
+        background-color:white;
+        border-radius:50%;
+        width: 24px;
+    }
+    .swiper-button-prev{
+        color: antiquewhite;
+    }
+    .swiper .swiper-pagination-bullet{ 
+        background-color: green;
+    }
+    .swiper .swiper-pagination-bullet-active{
+        width:20px;
+    }
+    .text{
+        display: flex;
+        align-items: center;
+    }
+    p{
+        color: black;
+    }
+    .icontainer{
+        display: flex;
+        justify-content: space-between;
+        background-color: #FAFAFA;
+        margin:5px 25px;
+        align-items: center;
+        color:black;
+        padding:25px 15px;
+        border-radius: 5px;
+    }
+    /* .img-text{
+        display: flex;
+        border-radius: 5px;
+        margin: 10px 20px;
+        padding: 10px 20px;
+    }  */
+    .image-section{
+        width:1360px;
+        margin:10px auto;
+
+    }
+    .image-section img{
+        border-radius: 10px;
+    }
+    .image-section2{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+        row-gap: 10px;
+        column-gap: 10px;
+        transform: translateX(3px);
+    }

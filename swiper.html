@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper-cube</title>
+    <style>
+      .swiper{
+      height: 500px;
+      width: 480px;
+  }
+  .swiper-slide{
+    background-color: cornsilk;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon{
+    color:gold;
+    text-align: center;
+    margin-top: 10px ;
+  }
+  .icon-text{
+    text-align: center;
+  }
+ 
+    </style>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+       <div class="container"> <img width="480px"  src="./Screenshot 2024-11-26 181252.png" />
+        <div class="icon">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="icon-text">
+          <h3>Northern Light </h3>
+          <p>Book a flight now </p>
+        </div>
+      </div></div>
+      <div class="swiper-slide">
+        <img width="480px"src="./Screenshot 2024-11-26 181752.png" />
+        <div class="icon">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="icon-text">
+          <h3> Fresh Food</h3>
+          <p>Book a healthy meal now </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="container">
+        <img width="350px"src="./hilda (1).jpeg" />
+      </div>
+      <div class="icon">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="icon-text">
+        <h3>Hida Baci's kitchen </h3>
+        <p>Book for a meal now </p>
+      </div></div>
+       <div class="swiper-slide">
+        <div class="container">
+        <img  height="350px" width="490px" src="./sonic.jpg" />
+      </div>
+      <div class="icon">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="icon-text">
+        <h3>Sonic  Movies 3 Shows on 20th December 2024 </h3>
+        <p>Book for a ticket now </p>
+      </div></div>
+      </div>
+    </div> 
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+       
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+    delay:2000
+  },
+    }); 
+  </script>
+  
+</body>
+</html>

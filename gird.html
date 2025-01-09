@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+    .grid1{
+        background-color: bisque;
+    }
+    .grid2{
+        background-color: blueviolet;
+    }
+    .grid3{
+        background-color: brown;
+    }
+    .grid4{
+        background-color: chocolate;
+    }
+    .grid5{
+        background-color: crimson;
+    }
+    .grid6{
+        background-color: darkgray;
+    }
+    .grid7{
+        background-color: cyan;
+    }
+.container{
+    font-family: sans-serif;
+    background-color: white;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(4 1fr); */
+    /* grid-template-columns: 200px,300px,1fr; */
+    gap: 10px;
+
+}
+.container2{
+    font-family: Verdana;
+    margin: 10px;
+    padding: 15px;
+    width: 450px;
+    height: 500px;
+    background-color: black;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(4 1fr); */
+    /* justify-content: center; */
+    align-content: end;
+    /* align-items: end; */
+      /* justify-content: center; */
+}
+.grid1{
+    grid-column: 3;
+    grid-row: 1;
+}
+.grid7{
+    grid-column: 1;
+    grid-row: 1;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="grid1">Python programming</div>
+        <div class="grid2">Java Programming</div>
+        <div class="grid3">Mongo db</div>
+        <div class="grid4">SQL</div>
+        <div class="grid5">Nodejs</div>
+        <div class="grid6">react</div>
+        <div class="grid7">React Native</div>
+    </div>
+
+    <div class="container2">
+        <div class="grid1">programming</div>
+        <div class="grid2">is a skill</div>
+        <div class="grid3">you</div>
+        <div class="grid4">need</div>
+        <div class="grid5">to understand</div>
+        <div class="grid6">and implement</div>
+    </div>
+
+
+</body>
+</html>
