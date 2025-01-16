@@ -157,6 +157,12 @@ img {
     padding: 10px 20px;
 }
 
+.swiper .swiper-pagination-bullet{ 
+    background-color: green;
+}
+.swiper .swiper-pagination-bullet-active{
+    width:20px;
+}
 .navmenu {
     display: flex;
     padding: 30px;
@@ -287,7 +293,15 @@ img {
 .best-seller {
     padding: 10px 15px;
     height: 100vh;
+
 }
+/* article{
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px ;
+    row-gap: 10px;
+} */
 .best-seller .title {
     font-size: 22px;
     font-weight: bold;
