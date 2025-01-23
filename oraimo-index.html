@@ -16,11 +16,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
-<marquee style="background-color: grey; padding:25px 25px;">Happy New Year! Register and subscribe now to earn 600 points. Enjoy exclusive discounts, points mall, and more on the oraimo store app!</marquee>
+<marquee style="background-color: grey; padding:25px 25px; color: white;">Happy New Year! Register and subscribe now to earn 600 points. Enjoy exclusive discounts, points mall, and more on the oraimo store app!</marquee>
 <body>
     <header class="container">
         <div class="logo">
-            <img width="190px" src="./oraimo.png" alt="Oriamo Logo">
+            <img width="190px" src="oraimo.logo.png" alt="Oriamo Logo">
         </div>
         <nav class="navmenu">
             <div class="header-text">
@@ -60,12 +60,35 @@
                 <div class="swiper-slide"><img src="./oraimo hero7.webp" alt="Slide 7"></div>
                 <div class="swiper-slide"><img src="./oraimo hero8.webp" alt="Slide 8"></div>
                 <div class="swiper-slide"><img src="./oraimo hero9.webp" alt="Slide 9"></div>
+                <div class="swiper-slide"><img src="./oraimo hero10.webp" alt="Slide 10"></div>
+                <div class="swiper-slide"><img src="./oraimo hero11.webp" alt="Slide 11"></div>
+                <div class="swiper-slide"><img src="./oraimo hero12.webp" alt="Slide 12"></div>
                 <!-- Add more slides as needed -->
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
+         <!-- Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2000,
+            },
+        });
+    </script>
     </section>
 
     <div class="icontainer">
@@ -86,191 +109,451 @@
 
     <div class="img-container">
         <div class="image-section">
-            <div>
+                <span class="img-text">Audio</span>
                 <img src="./audio.webp" alt="Audio">
             </div>
             <div class="image-section2">
+                <!-- <div class="img-tag">
+                <span class="img-text">Power</span> -->
+            
+            <div class="img-tag">
+                <span class="img-text">Power</span>
                 <img src="./power.webp" alt="Power">
+            </div>
+            <div class="img-tag">
+                <span class="img-text">Smart & Office</span>
                 <img src="./smart & office.webp" alt="Smart & Office">
+            </div>
+                <div class="img-tag">
+                    <span class="img-text">Personal Care</span>
                 <img src="./personal care.webp" alt="Personal Care">
+            </div>
+                <div class="img-tag">
+                    <span class="img-text">Home Appliances</span>
                 <img src="./home appliances.webp" alt="Home Appliances">
             </div>
+            </div>
         </div>
-    </div>
+    
 
    
     <section class="best-seller">
         <h1 class="title">Best Seller</h1>
-        <article>
-        <div class="seller-card">
-            <div class="seller-img">
-                <span class="seller-tag">New arrival</span>
-                <img src="clipper.webp" alt="best-seller" class="seller-product">
+     <!-- Swiper -->
+   <div class="swiper Swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
 
-                <div class="seller-ratings">
-                    <h3>4.9</h3>
-                    <img src="images/icon-star.svg" alt="star">
-                    <p>(5488)</p>
-                </div>
-            </div>
-            <div class="seller-content">
-                <h1 class="title">Pro Headphones</h1>
-                <hr />
-
-                <div class="option">
-                    <img src="2.5 hrs.svg" alt="icon">
-                    <p>2.5 hrs Runtime</p>
-                </div>
-
-                <hr />
-
-                <div class="option">
-                    <img src="design hair.svg" alt="icon">
-                    <p>Precise Blade for All hair Type</p>
-                </div>
-
-                <hr />
-
-                <div class="pricing">
-                    <h1>&#8358; 36,500</h1>
-                    <p>&#8358; 47,300</p>
-                </div>
-
-                <div class="hidden">
-                    <button class="learn-more">Learn more</button>
-                    <button class="add-cart">Add to cart</button>
-                </div>
-
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
             </div>
         </div>
-        <div class="seller-card">
-            <div class="seller-img">
-                <span class="seller-tag">New arrival</span>
-                <img src="clipper.webp" alt="best-seller" class="seller-product">
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
 
-                <div class="seller-ratings">
-                    <h3>4.9</h3>
-                    <img src="images/icon-star.svg" alt="star">
-                    <p>(5488)</p>
-                </div>
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
             </div>
-            <div class="seller-content">
-                <h1 class="title">Pro Headphones</h1>
-                <hr />
 
-                <div class="option">
-                    <img src="2.5 hrs.svg" alt="icon">
-                    <p>2.5 hrs Runtime</p>
-                </div>
+            <hr />
 
-                <hr />
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
+            </div>
 
-                <div class="option">
-                    <img src="design hair.svg" alt="icon">
-                    <p>Precise Blade for All hair Type</p>
-                </div>
+            <hr />
 
-                <hr />
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
+            </div>
 
-                <div class="pricing">
-                    <h1>&#8358; 36,500</h1>
-                    <p>&#8358; 47,300</p>
-                </div>
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
 
-                <div class="hidden">
-                    <button class="learn-more">Learn more</button>
-                    <button class="add-cart">Add to cart</button>
-                </div>
+        </div>
+    </div></div>
+      <div class="swiper-slide"><div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
 
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
             </div>
         </div>
-        <div class="seller-card">
-            <div class="seller-img">
-                <span class="seller-tag">New arrival</span>
-                <img src="clipper.webp" alt="best-seller" class="seller-product">
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
 
-                <div class="seller-ratings">
-                    <h3>4.9</h3>
-                    <img src="images/icon-star.svg" alt="star">
-                    <p>(5488)</p>
-                </div>
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
             </div>
-            <div class="seller-content">
-                <h1 class="title">Pro Headphones</h1>
-                <hr />
 
-                <div class="option">
-                    <img src="2.5 hrs.svg" alt="icon">
-                    <p>2.5 hrs Runtime</p>
-                </div>
+            <hr />
 
-                <hr />
-
-                <div class="option">
-                    <img src="design hair.svg" alt="icon">
-                    <p>Precise Blade for All hair Type</p>
-                </div>
-
-                <hr />
-
-                <div class="pricing">
-                    <h1>&#8358; 36,500</h1>
-                    <p>&#8358; 47,300</p>
-                </div>
-
-                <div class="hidden">
-                    <button class="learn-more">Learn more</button>
-                    <button class="add-cart">Add to cart</button>
-                </div>
-
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
             </div>
-        </div> 
-        <div class="seller-card">
-            <div class="seller-img">
-                <span class="seller-tag">New arrival</span>
-                <img src="clipper.webp" alt="best-seller" class="seller-product">
 
-                <div class="seller-ratings">
-                    <h3>4.9</h3>
-                    <img src="images/icon-star.svg" alt="star">
-                    <p>(5488)</p>
-                </div>
+            <hr />
+
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
             </div>
-            <div class="seller-content">
-                <h1 class="title">Pro Headphones</h1>
-                <hr />
 
-                <div class="option">
-                    <img src="2.5 hrs.svg" alt="icon">
-                    <p>2.5 hrs Runtime</p>
-                </div>
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
 
-                <hr />
+        </div>
+    </div></div>
+      <div class="swiper-slide"><div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
 
-                <div class="option">
-                    <img src="design hair.svg" alt="icon">
-                    <p>Precise Blade for All hair Type</p>
-                </div>
-
-                <hr />
-
-                <div class="pricing">
-                    <h1>&#8358; 36,500</h1>
-                    <p>&#8358; 47,300</p>
-                </div>
-
-                <div class="hidden">
-                    <button class="learn-more">Learn more</button>
-                    <button class="add-cart">Add to cart</button>
-                </div>
-
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
             </div>
         </div>
-        <div class="seller-card">
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
+
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
+            </div>
+
+            <hr />
+
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
+            </div>
+
+            <hr />
+
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
+            </div>
+
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
+
+        </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
+
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
+            </div>
+        </div>
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
+
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
+            </div>
+
+            <hr />
+
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
+            </div>
+
+            <hr />
+
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
+            </div>
+
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
+
+        </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
+
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
+            </div>
+        </div>
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
+
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
+            </div>
+
+            <hr />
+
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
+            </div>
+
+            <hr />
+
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
+            </div>
+
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
+
+        </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
+
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
+            </div>
+        </div>
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
+
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
+            </div>
+
+            <hr />
+
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
+            </div>
+
+            <hr />
+
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
+            </div>
+
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
+
+        </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
+
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
+            </div>
+        </div>
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
+
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
+            </div>
+
+            <hr />
+
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
+            </div>
+
+            <hr />
+
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
+            </div>
+
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
+
+        </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
+
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
+            </div>
+        </div>
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
+
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
+            </div>
+
+            <hr />
+
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
+            </div>
+
+            <hr />
+
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
+            </div>
+
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
+
+        </div>
+    </div></div>
+      <div class="swiper-slide"> <div class="seller-card">
+        <div class="seller-img">
+            <span class="seller-tag">New arrival</span>
+            <img src="clipper.webp" alt="best-seller" class="seller-product">
+
+            <div class="seller-ratings">
+                <h3>4.9</h3>
+                <img src="images/icon-star.svg" alt="star">
+                <p>(5488)</p>
+            </div>
+        </div>
+        <div class="seller-content">
+            <h1 class="title">Pro Headphones</h1>
+            <hr />
+
+            <div class="option">
+                <img src="2.5 hrs.svg" alt="icon">
+                <p>2.5 hrs Runtime</p>
+            </div>
+
+            <hr />
+
+            <div class="option">
+                <img src="design hair.svg" alt="icon">
+                <p>Precise Blade for All hair Type</p>
+            </div>
+
+            <hr />
+
+            <div class="pricing">
+                <h1>&#8358; 36,500</h1>
+                <p>&#8358; 47,300</p>
+            </div>
+
+            <div class="hidden">
+                <button class="learn-more">Learn more</button>
+                <button class="add-cart">Add to cart</button>
+            </div>
+
+        </div>
+    </div></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".Swiper", {
+        slidesPerView: 4,
+      spaceBetween: 5,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    
+  </script> 
+  </section>
+  <div class="award">
+    <img src="oraimo award.webp" alt="award">
+  </div>
+
+    <div class="gcontainer">
+        <h1 class="new">New Arrival</h1>
+        <div class="grid">
+        <div class="grid1"><div class="seller-card">
             <div class="seller-img">
                 <span class="seller-tag">New arrival</span>
                 <img src="clipper.webp" alt="best-seller" class="seller-product">
-
+    
                 <div class="seller-ratings">
                     <h3>4.9</h3>
                     <img src="images/icon-star.svg" alt="star">
@@ -280,38 +563,38 @@
             <div class="seller-content">
                 <h1 class="title">Pro Headphones</h1>
                 <hr />
-
+    
                 <div class="option">
                     <img src="2.5 hrs.svg" alt="icon">
                     <p>2.5 hrs Runtime</p>
                 </div>
-
+    
                 <hr />
-
+    
                 <div class="option">
                     <img src="design hair.svg" alt="icon">
                     <p>Precise Blade for All hair Type</p>
                 </div>
-
+    
                 <hr />
-
+    
                 <div class="pricing">
                     <h1>&#8358; 36,500</h1>
                     <p>&#8358; 47,300</p>
                 </div>
-
+    
                 <div class="hidden">
                     <button class="learn-more">Learn more</button>
                     <button class="add-cart">Add to cart</button>
                 </div>
-
+    
             </div>
-        </div>
-        <div class="seller-card">
+        </div></div>
+        <div class="grid2"><div class="seller-card">
             <div class="seller-img">
                 <span class="seller-tag">New arrival</span>
                 <img src="clipper.webp" alt="best-seller" class="seller-product">
-
+    
                 <div class="seller-ratings">
                     <h3>4.9</h3>
                     <img src="images/icon-star.svg" alt="star">
@@ -321,38 +604,38 @@
             <div class="seller-content">
                 <h1 class="title">Pro Headphones</h1>
                 <hr />
-
+    
                 <div class="option">
                     <img src="2.5 hrs.svg" alt="icon">
                     <p>2.5 hrs Runtime</p>
                 </div>
-
+    
                 <hr />
-
+    
                 <div class="option">
                     <img src="design hair.svg" alt="icon">
                     <p>Precise Blade for All hair Type</p>
                 </div>
-
+    
                 <hr />
-
+    
                 <div class="pricing">
                     <h1>&#8358; 36,500</h1>
                     <p>&#8358; 47,300</p>
                 </div>
-
+    
                 <div class="hidden">
                     <button class="learn-more">Learn more</button>
                     <button class="add-cart">Add to cart</button>
                 </div>
-
+    
             </div>
-        </div>
-        <div class="seller-card">
+        </div></div>
+        <div class="grid3"><div class="seller-card">
             <div class="seller-img">
                 <span class="seller-tag">New arrival</span>
                 <img src="clipper.webp" alt="best-seller" class="seller-product">
-
+    
                 <div class="seller-ratings">
                     <h3>4.9</h3>
                     <img src="images/icon-star.svg" alt="star">
@@ -362,37 +645,433 @@
             <div class="seller-content">
                 <h1 class="title">Pro Headphones</h1>
                 <hr />
-
+    
                 <div class="option">
                     <img src="2.5 hrs.svg" alt="icon">
                     <p>2.5 hrs Runtime</p>
                 </div>
-
+    
                 <hr />
-
+    
                 <div class="option">
                     <img src="design hair.svg" alt="icon">
                     <p>Precise Blade for All hair Type</p>
                 </div>
-
+    
                 <hr />
-
+    
                 <div class="pricing">
                     <h1>&#8358; 36,500</h1>
                     <p>&#8358; 47,300</p>
                 </div>
-
+    
                 <div class="hidden">
                     <button class="learn-more">Learn more</button>
                     <button class="add-cart">Add to cart</button>
                 </div>
-
+    
             </div>
-        </div>
-    </article>
+        </div></div>
+        <div class="grid4"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+        <div class="grid5"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+        <div class="grid6"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+        <div class="grid7"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+        <div class="grid8"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+        <div class="grid9"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+        <div class="grid10"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+        <div class="grid11"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+        <div class="grid12"><div class="seller-card">
+            <div class="seller-img">
+                <span class="seller-tag">New arrival</span>
+                <img src="clipper.webp" alt="best-seller" class="seller-product">
+    
+                <div class="seller-ratings">
+                    <h3>4.9</h3>
+                    <img src="images/icon-star.svg" alt="star">
+                    <p>(5488)</p>
+                </div>
+            </div>
+            <div class="seller-content">
+                <h1 class="title">Pro Headphones</h1>
+                <hr />
+    
+                <div class="option">
+                    <img src="2.5 hrs.svg" alt="icon">
+                    <p>2.5 hrs Runtime</p>
+                </div>
+    
+                <hr />
+    
+                <div class="option">
+                    <img src="design hair.svg" alt="icon">
+                    <p>Precise Blade for All hair Type</p>
+                </div>
+    
+                <hr />
+    
+                <div class="pricing">
+                    <h1>&#8358; 36,500</h1>
+                    <p>&#8358; 47,300</p>
+                </div>
+    
+                <div class="hidden">
+                    <button class="learn-more">Learn more</button>
+                    <button class="add-cart">Add to cart</button>
+                </div>
+    
+            </div>
+        </div></div>
+    </div>
+    </div>
+   
+<div class="popularity">
+    <img src="popularityoraimo1.webp" alt="">
+</div>
+    <p class="oraimo-title">WHY BUY FROM oraimo</p>
+    <section class="oraimo-container">
+        <img src="Africa-NO.1.svg" alt="" class="oraimo">
     </section>
-    <div class="gsap-container">
-        <div class="card">Card 1</div>
+    <div class="firstgrid">
+        <div class="mygrid"><p class="Warrant">ONE YEAR WARRANTY ONLY REPLACE NO REPAIR</p>
+            <img class="fimage" src="oraimo 1yr.svg" alt="">
+        </div>
+        <div class="no1img">
+        <img src="oraimo.png" alt="">
+    </div>
+    <div class="mygrid"><p class="Warrant">ONE YEAR WARRANTY ONLY REPLACE NO REPAIR</p>
+        <img class="fimage" src="oraimo 1yr.svg" alt="">
+    </div>
+    <div class="women mygrid"><p class="Warrant">ONE YEAR WARRANTY ONLY REPLACE NO REPAIR</p>
+        <img class="fimage" src="oraimo 1yr.svg" alt="">
+    </div>
+    <div class="mygrid"><p class="Warrant">ONE YEAR WARRANTY ONLY REPLACE NO REPAIR</p>
+        <img class="fimage" src="oraimo 1yr.svg" alt="">
+    </div>
+    
+
+    </div>
+         <div class="gsap-container">
+        <div class="card"><img src="Africa-NO.1.svg"></div>
         <div class="card center-card">Card 2</div>
         <div class="card">Card 3</div>
     </div>
@@ -417,5 +1096,6 @@
             },
         });
     </script>
+
 </body>
 </html>
